@@ -30,7 +30,7 @@
 .decorated-section>.section-decor{position:absolute;z-index:-1;inset:0;width:100%;height:100%;object-fit:contain;object-position:center;pointer-events:none;user-select:none;opacity:.32}
 .decorated-section>:not(.section-decor){position:relative;z-index:1}
 .decor-demos{opacity:.27!important}
-.decor-reviews{opacity:.24!important}
-.decor-occasions{opacity:.28!important}
-.decor-how{opacity:.23!important}
-@media(max-width:680px){.decorated-section>.section-decor{width:144%;max-width:none;left:-22%;height:auto;aspect-ratio:8/3;opacity:.2;object-fit:contain}.decor-reviews,.decor-how{opacity:.16!important}.decor-occasions{opacity:.19!important}}
+.decor-reviews{opacity:.46!important;filter:saturate(1.28) contrast(1.08)}
+.decor-occasions{opacity:.52!important;filter:saturate(1.3) contrast(1.1)}
+.decor-how{opacity:.44!important;filter:saturate(1.25) contrast(1.08)}
+@media(max-width:680px){.decorated-section>.section-decor{width:144%;max-width:none;left:-22%;height:auto;aspect-ratio:8/3;opacity:.2;object-fit:contain}.decor-reviews,.decor-how{opacity:.34!important}.decor-occasions{opacity:.39!important}}
