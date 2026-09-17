@@ -1,6 +1,6 @@
 const reviewStyles=document.createElement('link');
 reviewStyles.rel='stylesheet';
-reviewStyles.href='reviews.css';
+reviewStyles.href='reviews.css?v=10';
 document.head.append(reviewStyles);
 const audio=document.querySelector('#audio');
 const tracks=[...document.querySelectorAll('.track')];
