@@ -23,3 +23,12 @@ tracks.forEach(track=>{
 });
 audio.addEventListener('timeupdate',()=>{if(!current)return;const duration=audio.duration||Number(current.dataset.duration);current.querySelector('.progress i').style.width=`${audio.currentTime/duration*100}%`;current.querySelector('.track-time span').textContent=fmt(audio.currentTime)});
 audio.addEventListener('ended',()=>{if(!current)return;current.querySelector('.play').textContent='▶';current.querySelector('.progress i').style.width='0';current.querySelector('.track-time span').textContent='00:00'});
+
+const revealTargets=document.querySelectorAll('.section-heading,.tracks,.review-wall figure,.occasion-cloud,.steps article,.final h2,.final .primary');
+if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches&&'IntersectionObserver'in window){
+  revealTargets.forEach(el=>el.classList.add('reveal-ready'));
+  const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{
+    if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target)}
+  }),{threshold:.12,rootMargin:'0px 0px -40px'});
+  revealTargets.forEach(el=>observer.observe(el));
+}
