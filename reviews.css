@@ -39,7 +39,10 @@
 @media(max-width:680px){.trust .trust-price b{font-size:1.72rem}.decorated-section>.section-decor{width:144%;max-width:none;left:-22%;height:auto;aspect-ratio:8/3;opacity:.2;object-fit:contain}.decor-reviews,.decor-how{opacity:.43!important}.decor-occasions{opacity:.48!important}.decor-extra{opacity:.42!important}}
 
 /* 2026 mobile art direction: unique portrait decorations stay inside the viewport. */
-.mobile-decor{display:none}
+.mobile-decor{display:block;position:absolute;z-index:-1;width:285px;height:auto;pointer-events:none;user-select:none;opacity:.62;filter:saturate(1.2) contrast(1.05) drop-shadow(0 18px 24px rgba(91,55,118,.12))}
+.reviews>.mobile-decor{left:-20px;top:130px}
+.occasions>.mobile-decor{right:-12px;top:105px}
+.how>.mobile-decor{left:25px;top:55px;width:235px;opacity:.5}
 .reviews,.occasions,.how{background-image:radial-gradient(circle at 12% 12%,rgba(233,79,131,.08),transparent 24%),radial-gradient(circle at 88% 82%,rgba(117,174,233,.1),transparent 26%)}
 .track,.review-wall figure,.occasion-cloud span,.steps article{transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease}
 .track:hover,.review-wall figure:hover,.occasion-cloud span:hover{transform:translateY(-3px);box-shadow:0 18px 42px rgba(72,46,93,.12)}
